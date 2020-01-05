@@ -1,10 +1,14 @@
-# HEATMAP
+# Django and Flask implementation of the Image memorability prediction
 
 ### STEPS
-* Start the API
+* Start the flask API 
 ```
 py deploy.py
 ```
+* still u can get results from the Terminal
+```
+route : curl -X POST http:127.0.0.1:5000/predict -F "image=@<image path>"
+````
 * In the Django Project run 
 ```
 pip install requirements.txt
