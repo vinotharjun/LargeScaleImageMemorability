@@ -10,5 +10,15 @@ Progress in estimating visual memorability has been limited by the small scale a
 ###### WebApp  :Django Flask implmentation of Api and web application of Image memorability
 ###### Photos : Some random screenshots of the results of research
 
+## Model architecture of VMemNet
+![alt text](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/model.png)
+## Result of analsyis
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/comparision.png)
+
+## Result Plots 
+
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/grids.png)
 
 
+## Regression activation Mappling
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/heatmap%20grid.png)
