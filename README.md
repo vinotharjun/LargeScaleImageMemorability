@@ -24,5 +24,5 @@ Progress in estimating visual memorability has been limited by the small scale a
 ![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/heatmap%20grid.png)
 
 ## Web app 
-we also built web app for better experience 
+we also built web app for better experience  (can be found in webapp directory)
 ![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/output.png)
