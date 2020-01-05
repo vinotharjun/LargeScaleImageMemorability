@@ -5,7 +5,7 @@ Progress in estimating visual memorability has been limited by the small scale a
 
 ## Repository Details
 ###### Dcoumentation : The detailed document of the research 
-###### Experiments  : All research notbooks can be found here
+###### Experiments  : All Model selection of research notbooks can be found here
 ###### Results  : Result of the research
 ###### WebApp  :Django Flask implmentation of Api and web application of Image memorability
 ###### Photos : Some random screenshots of the results of research
