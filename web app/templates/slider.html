@@ -1,0 +1,114 @@
+ {% extends 'base.html' %}
+ 
+ 
+{% block content %}
+<style>
+    #normal
+    {
+      /* width: 150px; 
+      height: 100px; */
+      position: relative;
+      top: 0;
+      /* padding: 20px 500px; */
+      opacity:0.5;
+    }
+    #heatmap
+    {
+      /* width: 150px; 
+      height: 100px; */
+      position:absolute;
+      top: 0;
+      /* left: 500px; */
+      opacity:0.5;
+    }
+    .slidecontainer {
+      padding-top: 50px;
+      padding-left: 40%;
+      width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+/* .align{
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-right: ;
+} */
+
+.image-container{
+  padding-top:5%;
+  padding-left: 38%;
+}
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+<div class="image-container">
+
+
+<div id="images"  style="position: relative; left: 10; top: 0;">
+<div class="align">  
+{% for key,value in images.items %}
+<div id={{value.content.0.id}}>
+<img  src={{value.content.0.url}} height="250" width="300"/>
+</div>
+<div id={{value.content.1.id}}>
+<img  src={{value.content.1.url}} height="250" width="300"/>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>  
+
+<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+   <p><span id="demo"></span></p>
+</div>  
+  <script>
+    window.onload = function(){
+      var slider = document.getElementById("myRange");
+      slider.oninput() 
+    }
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  // output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    
+    document.getElementById("normal").style.opacity=(100-this.value)/100;
+    document.getElementById("heatmap").style.opacity=(this.value/100);
+    // output.innerHTML = this.value;
+  }
+  </script> 
+  
+{% for key,value in images.items %}
+<center><span id="score"><h3>{{value.content.2.id}}:{{value.content.2.Score}}</h3></span></center>
+{% endfor %}
+{% endblock %}
