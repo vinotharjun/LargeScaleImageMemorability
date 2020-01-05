@@ -22,3 +22,7 @@ Progress in estimating visual memorability has been limited by the small scale a
 
 ## Regression activation Mappling
 ![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/heatmap%20grid.png)
+
+## Web app 
+we also built web app for better experience 
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/output.png)
