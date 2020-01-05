@@ -26,7 +26,10 @@ pip install requirements.txt
 py manage.py runserver
 ```
 * Now in the upload image card select the image for which you need the memorability score and heat map image
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/Upload%20Image.png)
 
 * Slide the bar to change the values
-#### 0-Original Image
-#### 1-Complete Heat Map
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/slider%20at%20min.png)
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/output.png)
+![](https://github.com/vinotharjun/LargeScaleImageMemorability/blob/master/Photos/slider%20at%20max.png)
+
