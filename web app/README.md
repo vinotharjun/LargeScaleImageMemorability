@@ -5,9 +5,17 @@
 ```
 py deploy.py
 ```
-* still u can get results from the Terminal
+* can get results from the Terminal
 ```
+#Request 
+
 curl -X POST http:127.0.0.1:5000/predict -F "image=@<image path>"
+
+#Response
+{
+    MemorabilityScore" : score in range of (0 - 1)
+   "heatmap":base64 of the heatmap
+ }
 ````
 * In the Django Project run 
 ```
